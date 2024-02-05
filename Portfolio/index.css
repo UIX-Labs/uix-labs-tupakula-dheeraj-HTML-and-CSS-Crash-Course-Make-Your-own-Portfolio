@@ -1,1 +1,39 @@
 /* Write your code below for PORTFOLIO */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gainsboro;
+}
+button {
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+form {
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  margin: 0 ;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#message {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #586659;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
