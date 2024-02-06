@@ -1,1 +1,52 @@
 /*  Start coding below for POSITION THE CUBES TASK*/
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: rgb(93, 57, 184);
+    height: 600px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.top-left,.bottom-left,.top-right,.bottom-right {
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+}
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(6, 126, 48);
+}
+.bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:rgb(255, 191, 0) ;
+}
+.top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(250, 79, 0);
+}
+.bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 200, 250);
+}
+.center {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    background-color: rgb(193, 6, 249);
+}
