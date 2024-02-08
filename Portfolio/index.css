@@ -7,6 +7,7 @@ body {
         overflow-x: hidden;
         color: #00d8ff;
       }
+      /* header css */
       .header {
         background-color: #004572;
         padding: 20px 0;
@@ -53,6 +54,11 @@ body {
         cursor: pointer;
       
       }
+      @media screen and (max-width:500px) {
+        .contact-btn {
+          display: none;
+        }
+      }
 
       /* home css */
       .home {
@@ -70,7 +76,7 @@ body {
       }
       .profile {
         width: 200px;
-        height: 150px;
+        height: 200px;
         border-radius: 50%;
         overflow: hidden;
       }
@@ -88,7 +94,7 @@ body {
         padding: 0 0 0 40px;
       }
       .vector-img {
-        height: 100px;
+        height: 150px;
         z-index: 2;
         position: relative;
         object-fit: contain;
@@ -100,6 +106,28 @@ body {
         position: absolute;
         object-fit: contain;
         width: 100%;
+
+      }
+      @media (min-width:300px) and (max-width:700px) {
+        .home {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+          text-align: center;
+        }
+        .profession {
+          margin: 10px;
+        }
+        .vector-img {
+          height: 50px;
+         }
+      }
+      @media (min-width:800px)  and (max-width:1200px) {
+         .vector-img {
+          height: 230px;
+         }
       }
 
       /* about and skills css */
@@ -157,8 +185,9 @@ body {
         padding: 0 50px;
       }
       .project {
-        flex-basis: 95%;
+        flex-basis: 45%;
         display: flex;
+        overflow:hidden;
         align-items: center;
         justify-content: center;
         padding: 20px;
@@ -166,8 +195,9 @@ body {
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
       }
+      
       .project img {
-        max-width: 300px;
+        max-width: 300px auto;
         border-radius: 10px;
         margin-right: 20px;
       }
@@ -195,9 +225,26 @@ body {
         font-size: 16px;
         cursor: pointer;
       }
-      .project:nth-child(2) {
-        display: flex;
-        flex-direction: row-reverse;
+      
+      @media (min-width:300px) and (max-width:700px) {
+        .project {
+          flex-basis: 95%;
+          flex-direction: column;
+        }
+        .project:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+      }
+    }
+      @media (min-width:701px) and (max-width:1000px) {
+        .project {
+          width: 80%;
+          flex-direction: row;
+          flex-grow: 2;
+        }
+        .project:nth-child(2) {
+          flex-direction: row-reverse;
+      }
       }
       /* footer css */
 
@@ -215,6 +262,7 @@ body {
         text-align: center;
         gap: 20px;
       }
+      
       .contact {
         width: 35%;
         display: flex;
@@ -245,12 +293,27 @@ body {
         padding: 10px ;
         border-radius: 10px;
       }
+      @media (min-width:300px) and (max-width:700px) {
+        .footer {
+          flex-direction: column;
+        }
+        .contact {
+          width: 100%;
+          align-items: center;
+        }
+        .opinion-section {
+          width: 100%;
+        }
+      }
       .opinion-section .section-title {
         color: #003E66;
       }
       .opinion-section form {
         width: 95%
+        
       }
+
+      /* nav bars css */
       .nav-bar {
         background-color: #003E66;
         padding: 20px;
@@ -277,7 +340,7 @@ body {
       }
       input[type="email"],
       textarea {
-        width: 100%;
+        width: 95%;
         padding: 10px;
         margin-bottom: 10px;
         border-radius: 5px;
